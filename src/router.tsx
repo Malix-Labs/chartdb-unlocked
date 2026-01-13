@@ -1,6 +1,6 @@
 import React from 'react';
 import type { RouteObject } from 'react-router-dom';
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import type { TemplatePageLoaderData } from './pages/template-page/template-page';
 import type { TemplatesPageLoaderData } from './pages/templates-page/templates-page';
 import { getTemplatesAndAllTags } from './templates-data/template-utils';
@@ -141,4 +141,4 @@ const routes: RouteObject[] = [
     },
 ];
 
-export const router = createBrowserRouter(routes);
+export const router = createHashRouter(routes);
