@@ -697,7 +697,7 @@ export const ImportDatabase: React.FC<ImportDatabaseProps> = ({
                     )}
 
                     {!isDesktop ? (
-                        <ZoomableImage src="/load-new-db-instructions.gif">
+                        <ZoomableImage src="load-new-db-instructions.gif">
                             <Button type="button" variant="link">
                                 {t(
                                     'new_diagram_dialog.import_database.instructions_link'

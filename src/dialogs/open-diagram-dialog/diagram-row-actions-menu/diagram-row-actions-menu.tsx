@@ -36,7 +36,7 @@ export const DiagramRowActionsMenu: React.FC<DiagramRowActionsMenuProps> = ({
         refetch();
 
         if (diagram.id === diagramId || numberOfDiagrams <= 1) {
-            window.location.href = '/';
+            window.location.href = window.location.pathname;
         }
     }, [deleteDiagram, diagram.id, diagramId, refetch, numberOfDiagrams]);
 
